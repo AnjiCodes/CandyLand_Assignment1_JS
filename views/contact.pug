@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title CandyLand - Contact Us
+    link(rel='stylesheet', href='CSS/style.css')
+  body
+    header
+      nav
+        ul
+          li
+            a(href='/') Home
+          li
+            a(href='/products') Products
+          li
+            a(href='/about') About
+          li
+            a(href='#') Contact
+
+    main
+      h1 Contact Us
+      p Have any questions or feedback? Fill out the form below and we'll get back to you as soon as possible.
+
+      form(action='/contact', method='POST')
+        label(for='name') Your Name:
+        input(type='text', id='name', name='name', required)
+
+        label(for='email') Your Email:
+        input(type='email', id='email', name='email', required)
+
+        label(for='message') Your Message:
+        textarea(id='message', name='message', required)
+
+        button(type='submit') Send Message
+
+    footer
+      p © 2023 CandyLand. All rights reserved.
